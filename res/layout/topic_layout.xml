@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/topic_layout" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_layout" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="@dimen/title_text_size"
+            android:text="TextView"
+            android:layout_margin="@dimen/topic_text_margin" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout" >
+
+        <TextView
+            android:id="@+id/replyNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/topic_text_size"
+            android:textColor="#fff"
+            android:text="TextView"
+            android:layout_margin="@dimen/topic_text_margin" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="@dimen/topic_text_size"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_margin="@dimen/topic_text_margin" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/topic_text_size"
+            android:text="TextView"
+            android:layout_margin="@dimen/topic_text_margin" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

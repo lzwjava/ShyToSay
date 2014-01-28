@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0099cc" >
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent" 
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="主题"
+        android:textColor="#000"
+        android:background="#82E0FF"
+        android:textSize="@dimen/loginTextSize"
+        android:layout_margin="@dimen/topic_text_margin" > 
+    </EditText>
+    
+    <EditText
+        android:id="@+id/content" 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:hint="内容"
+        android:textColor="#000"
+        android:background="#82E0FF"
+        android:textSize="@dimen/loginTextSize"
+        android:layout_margin="@dimen/topic_text_margin"
+        android:gravity="top"> 
+    </EditText>
+    
+</LinearLayout>

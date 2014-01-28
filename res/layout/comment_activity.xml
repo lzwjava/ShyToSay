@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc" >
+    <ListView
+        android:id="@+id/postList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+    <LinearLayout 
+        android:id="@+id/reply_layout"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/topic_text_margin"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:textColor="#000"
+            android:background="#82E0FF"
+            android:layout_height="wrap_content"
+            android:hint="我也有话要说" > 
+        </EditText>
+
+        <Button
+            android:id="@+id/reply"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="发表"
+            android:onClick="reply"
+            android:layout_alignParentRight="true" />
+        
+    </LinearLayout>
+</RelativeLayout>
